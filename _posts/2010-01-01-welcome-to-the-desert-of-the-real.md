@@ -56,7 +56,10 @@ Vue2、Vuex3、Vue-Router3、Webpack4、Axios、Echarts、ElementUI
 6. 封装 Axios 请求，对超时时间及请求拦截和响应拦截进行统一配置
 7. 利⽤ elementUI 组件库提供的⽅法来实现选项卡，分⻚，表格，表单等⼀些常⽤的功能
 8. 对项目进行上线前的优化，通过 cdn 的方式引入第三方依赖，减小包的体积
+
 ## 项目难点：
+
+
 #### 权限控制，根据不同的员工进入系统显示不同的对应权限菜单
 1.可以实现根据用户权限动态生成菜单，并进行权限控制。
 2.在菜单生成的过程中，可以根据用户权限筛选出用户有权限访问的菜单项，并生成菜单。
@@ -64,38 +67,3 @@ Vue2、Vuex3、Vue-Router3、Webpack4、Axios、Echarts、ElementUI
 
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
