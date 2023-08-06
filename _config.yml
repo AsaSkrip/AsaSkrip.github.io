@@ -1,8 +1,7 @@
 # Site Settings
 name: 李梓涵
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+title: 李梓涵的个人博客
+description: 李梓涵是也一名非常优秀的前端开发工程师
 tags:
   - blog
   - template
@@ -17,7 +16,7 @@ menu:
     url: /about
   - title: 联系作者
     url: /contact
-  - title: 资料
+  - title: 源码
     url: /feed.xml
 email: lizihan997@63.com
 # See: https://zihanhan.work/
