@@ -6,9 +6,9 @@ subtitle: Front-end development engineer
 description: >-
  Hello, my name is Li Zihan, engaged in front-end development for two years
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://img2.baidu.com/it/u=1645834007,859509743&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=250
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://img2.baidu.com/it/u=1645834007,859509743&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=250
 category: blog
 tags:
   - welcome
