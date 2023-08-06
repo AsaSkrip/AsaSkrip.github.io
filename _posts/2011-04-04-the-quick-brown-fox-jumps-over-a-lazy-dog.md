@@ -4,8 +4,8 @@ layout: post
 title: ES6模块化和webpack
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: 虽然chrome的最新版本已经支持了import export 这种之间在脚本中引用（前提是script的type='module'的情况下），但是在真正的工作中，我们还是要考虑到es6兼容的问题。
-image: https://img-blog.csdnimg.cn/img_convert/502b43820e0fa0a1679d6dfe132178c2.png
-optimized_image: https://img-blog.csdnimg.cn/img_convert/502b43820e0fa0a1679d6dfe132178c2.png
+image: https://img0.baidu.com/it/u=385511469,3480835356&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281
+optimized_image: https://img0.baidu.com/it/u=385511469,3480835356&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281
 category: ES6模块化和webpack
 tags:
   - ES6
