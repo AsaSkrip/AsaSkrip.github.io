@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Life
-slug: life
-description: A category for life related posts.
+title: HTML5
+slug: HTML5
+description: 关于HTML的知识点
 ---
