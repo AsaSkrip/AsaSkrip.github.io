@@ -1,7 +1,7 @@
 ---
 date: 2017-08-14 22:55:45
 layout: post
-title: 自己真题
+title: 面试真题
 subtitle: 自己整理的面试真题
 description: 在前端领域中，“八股文”也是指一些既定的、常用的、套路化的编程技巧、解题思路和方法，主要是用来解决某一类问题的基本思路和模板。
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
