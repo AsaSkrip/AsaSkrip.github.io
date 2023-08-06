@@ -24,7 +24,7 @@ A *Jekflix* post file looks like:
 date: 2023-05-16 23:48:05
 layout: post
 title: 欢迎来到李梓涵的个人博客
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+subtitle: Front-end development engineer
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
