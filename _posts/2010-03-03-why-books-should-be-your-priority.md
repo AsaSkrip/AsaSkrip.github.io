@@ -36,106 +36,113 @@ HTML defines a long list of available inline tags, a complete list of which can 
 Most of these elements are styled by browsers with few modifications on our part.
 
 <!--page-->
+● 创建一个文件夹
+● 进入文件夹，鼠标右键，打开 Git Bash Here
+● 执行命令：git init
+● 随便创建个文件，写点代码
+● 让Git记住此时代码是什么样：
+  ○ git add .
+  ○ git commit -m '说明文字'
+● 随便修改一点代码
+  ○ git add .
+  ○ git commit -m '说明文字'
+● 随便修改一点代码，或新增一些文件，或删除一些文件
+  ○ git add .
+  ○ git commit -m '说明文字'
+● 执行 git log --oneline 查看你记录了几个版本了，方便看到版本号
+● 尝试执行 git reset --hard 版本号，将代码切换到历史版本4
 
-# 李梓涵
 
-## 李梓涵 2
 
-### Heading 3
+添加远程地址：
+● git remote add 别名 仓库地址
+移除远程地址：
+● git remote remove 别名
+查看远程地址：
+● git remote -v
 
-#### Heading 4
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+# 查看分支
+git branch
 
-## Code
+# 创建新分支
+git branch 分支名
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+# 切换分支
+git checkout 分支名
 
-```js
-// Example can be run directly in your JavaScript console
+# 合并分支
+git merge 分支名
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+# 删除分支
+git branch -d 分支名
+git branch -D 分支名
 
-// Call the function
-adder(2, 6);
-// > 8
-```
 
-<!--page-->
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
-## Lists
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+  ○ 执行 git pull  命令，以便在本地能够查看到所有的远程分支。
+  ○ git branch -a 查看的所有分支（-a 是 all 的意思，以便查看到所有的分支名）
+  ○ 依次 执行 git checkout 远程分支名  将所有分支检出（下载）到本地
+  ○ 切换到主分支或开发分支 git checkout master 
+  ○ 依次合并 其他分支 git merge 其他分支名 
+  ○ 合并后，将master分支推送
+  ○ 其他成员 git pull origin master 拉取更新
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+v
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+● 创建本地仓库并至少提交一次（把项目的初始模板、初始代码提交上去）
+  ○ 初始化一个项目，git init
+  ○ 添加初始的代码到暂存区 git add .
+  ○ 提交初始的代码到本地仓库 git commit -m "提交了初始的代码"
+● 推送到远程仓库
+  ○ git remote add origin 仓库地址
+  ○ git push -u origin master
+● 邀请成员
+  ○ 码云 -> 进入远程仓库 -> 管理 -> 仓库成员管理 -> 邀请成员
+  ○ 可以使用链接邀请，可以使用具体的用户名邀请
 
-<!--page-->
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+# 安装命令
+npm install 包名
+npm i 包名                 ---  安装命令的简写
+npm i 包名 包名 包名        --- 一次性安装多个包
+npm i 包名@版本号           --- 安装指定的版本
+npm i 包名 -D              --- 安装开发依赖（开发阶段才能用得上，项目做完就用不上了）
 
-## Images
+# 卸载命令
+npm uninstall 包名
+npm un 包名                --- 卸载命令的简写
+npm un 包名 包名 包名       --- 一次性卸载多个包
 
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
+windows系统：
+npm i -g nrm
 
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+Mac系统：
+sudo npm i -g nrm
 
-## Tables
+nrm ls         ---- 查看有哪些镜像源可用
 
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+nrm use taobao ---- 切换镜像源为淘宝
+nrm use npm    ---- 切换镜像源为npm主站
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+nrm test       ---- 测试镜像源的速度
 
-<!--page-->
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+npm run serve
 
+
+npm run build 打包结果
+
+
+# 使用less，需要安装下面的包
+npm i less-loader less -D           #（@vue/cli 5.0.1，直接安装）
+
+# 使用scss，需要安装下面的包
+npm i sass sass-loader -D 
 
 
 
