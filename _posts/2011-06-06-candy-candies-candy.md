@@ -2,8 +2,8 @@
 date: 2018-04-21 12:26:40
 layout: post
 title: Ajax和Node
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+subtitle: 众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。
+description: 众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822137/theme11_vei7iw.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822137/theme11_vei7iw.jpg
 category: diet
