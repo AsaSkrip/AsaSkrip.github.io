@@ -6,7 +6,7 @@ subtitle: 众所周知，前端开发总是离不开Ajax和Node的，因此，�
 description: 众所周知，前端开发总是离不开Ajax和Node的，因此，这些知识必须掌握。
 image: https://img2.baidu.com/it/u=741352811,2667400721&fm=253&fmt=auto&app=138&f=PNG?w=812&h=500
 optimized_image: https://img2.baidu.com/it/u=741352811,2667400721&fm=253&fmt=auto&app=138&f=PNG?w=812&h=500
-category: diet
+category: Ajax和Node
 tags:
   - food
   - tips
