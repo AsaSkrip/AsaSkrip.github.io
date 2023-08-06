@@ -9,7 +9,7 @@ permalink: /about/
 
 <img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
 
-# 作者
+# 介绍
 
 作者叫李梓涵，00后，来自河北，技术方面有两年的前端开发经验，
 用的技术栈是vue全家桶，熟练使用Element-ui 、 Vant、uview等组件库，熟练使用WeChat原生小程序开发，uni-app框架开发。
