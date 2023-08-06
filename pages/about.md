@@ -7,7 +7,7 @@ description: Some description.
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/lli.png" alt="Thiago Rossener" width="200">
+<img class="img-rounded" src="/assets/img/pixels.png" alt="Thiago Rossener" width="200">
 
 # 介绍
 
