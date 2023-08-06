@@ -2,7 +2,7 @@
 layout: page
 menu: false
 date: '2023-02-27 01:53:59'
-title: About
+title: 介绍
 description: Some description.
 permalink: /about/
 ---
