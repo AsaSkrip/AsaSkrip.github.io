@@ -16,28 +16,26 @@ tags:
 author: mranderson
 paginate: true
 ---
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+## 个人优势
 
-## Inline HTML elements
+1.熟练掌握 vue 全家桶（vue-cli、vue-router、vuex)<br>
+2.熟悉微信小程序原生开发、uniapp 开发以及双token的使用；<br>
+3.熟练使用 MVVM，ElementUI，Vant，Bootstrop，ECharts 等常用开发框架及功能插件. 4.熟练使用 Webpack 打包工具、以及包管理工具 yarn、熟练使用 Git 进行项目管理项目；<br>
+5.熟练使用Vue3 ，能够运用在项目中提高项目的开发效率，增强开发体验<br>
+6.熟悉原型链和继承原理，对面向对象有一定的理解熟练使用响应式布局，移动端自适应布局<br>
+7.熟练使用 Ajax、axios 模板引擎和后端进行数据交互、实现动态染页面部分刷新<br>
+常用优化：公共组件封装复用，组件缓存，路由图片数据懒加载，webpack 打包压缩，防抖节流等
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
-* **To bold text**, use `<strong>`.
-* *To italicize text*, use `<em>`.
-* Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-* Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-* <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-* Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-# 李梓涵 1
-
-## 李梓涵 2
+## 自我评价
+自我评价：<br>
+1.我是一名具备良好团队合作能力的前端开发工程师<br>
+2.在过去的项目中，我负责与设计团队紧密合作，将创意转化为用户友好的网页界面<br>
+3.我熟练掌握HTML、Css、JavaScript，并具备跨浏览器和响应式设计的经验<br>
+4.我注重细节，善于解决问题，并对学习新技术保持热情<br>
+5.我致力于提供高质量的代码和用户体验，以满足客户需求并推动产品的成功<br>
 
 ### 李梓涵 3
 
