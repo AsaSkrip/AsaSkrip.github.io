@@ -3,9 +3,7 @@ date: 2020-10-09 12:26:40
 layout: post
 title: ES6模块化和webpack
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description:虽然chrome的最新版本已经支持了import export 这种之间在脚本中引用（前提是script的type='module'的情况下），
-但是在真正的工作中，我们还是要考虑到es6兼容的问题。所以带着好奇，看了一下wepback是如何处理es6模块化的。当然实际工作中，
-我们还有commonJs的模块化，所以我们一起探讨webpack在模块化中的实际做了哪些事情.
+description:
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1506079212/jekflix-capa_vfhuzh.png
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1506079212/jekflix-capa_vfhuzh.png
 category: css
