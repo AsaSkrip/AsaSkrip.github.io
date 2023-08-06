@@ -6,7 +6,7 @@ subtitle: 50道Vue常见面试题集锦，涵盖入门到精通，自测 Vue 掌
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559820489/js-code_n83m7a.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559820489/js-code_n83m7a.jpg
-category: 面试题
+category: VUE面试题
 tags:
   - VUE
   - 面试题
