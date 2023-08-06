@@ -1,7 +1,7 @@
 ---
 date: 2018-04-21 12:26:40
 layout: post
-title: Candy, candies, candy!
+title: Ajax和Node
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822137/theme11_vei7iw.jpg
@@ -13,117 +13,288 @@ tags:
 author: mranderson
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+### 1、http和https的区别
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
+```
+答:
+  1.https协议需要到CA申请证书，一般免费证书较少，因而需要一定费用。
+  2.http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl/tls加密传输协议。
+  3.http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。
+  4.http的连接很简单，是无状态的；HTTPS协议是由SSL/TLS+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。
 ```
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+<a name="c266e46c"></a>
 
-## Lists
+### 2、get 和post的区别
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+```
+答: get
+			1. 在url后面拼接参数,只能以文本的形式传递数据
+			2. 传递的数据量小,4KB左右
+			3. 安全性低, 会将数据显示在地址栏
+			4. 速度快,通常用于安全性要求不高的请求
+			5. 会缓存数据
+	post
+		    1. 安全性比较高
+			2. 传递数据量大,请求对数据长度没有要求
+			3. 请求不会被缓存,也不会保留在浏览器历史记录里
+```
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
+<a name="fdfecfe4"></a>
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+### 3、项目中遇到的状态码有哪些
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+```
+答: 200  请求成功,  2开头的异步表示请求成功
+		304  请求被允许,但请求内容没有改变, 3开头的一般请求完成
+		400  请求格式错误,  4开头的一般表示请求错误
+		404  请求的资源(网页)不存在,  
+		500  内部服务器错误,  5开头的一般都是指服务器错误
+```
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+<a name="acbf56f1"></a>
 
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+### 4、jsonp的原理？以及优缺点
 
-## Images
+```
+答: 原理: 利用script标签的src属性具有天然可跨域的特性，由服务端返回一个预先定义好的Javascript函数的调用，并且将服务器数据以该函数参数的形式响应给浏览器.
+		优点: 完美解决在测试或者开发中获取不同域下的数据,用户传递一个callback参数给服务端，然后服务端返回数据时会将这个callback参数作为函数名来包裹住JSON数据，这样客户端就可以随意定制自己的函数来自动处理返回数据了。
+		缺点：Jsonp只支持get请求而不支持post 请求,也即是说如果想传给后台一个json 格式的数据,此时问题就来了, 浏览器会报一个http状态码41错误,告诉你请求格式不正确.
+```
 
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
+<a name="3dfb4228"></a>
 
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+### 5、什么是同源策略？怎么解决跨域问题
 
-## Tables
+```
+答: 同源策略: 同源策略是浏览器的一种安全策略, 所谓同源是指域名、协议、端口完全相同，不同源则跨域。
+   解决跨域的方法: 
+			1. 通过jsonp跨域
+			2. 跨域资源共享（CORS  Access-Control-Allow-Origin: http://api.bob.com）
+			3. nginx代理跨域
+```
 
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<a name="a12c9639"></a>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+### 6、页面通信的方式有哪些
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+```
+答: 1. 通过url拼接地址
+	2. H5本地存储
+```
+
+<a name="60048b26"></a>
+
+### 7、你对WebSocket了解哪些
+
+```
+答: WebSocket 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信，能更好的节省服务器资源和带宽并达到实时通讯，它建立在TCP之上，同HTTP一样通过TCP来传输数据，但是它和HTTP最大不同是：
+	1. WebSocket是一种双向通信协议，在建立连接后，WebSocket服务器和Browser/Client Agent都能主动的向对方发送或接收数据，就像Socket一样；
+	2. WebSocket需要类似TCP的客户端和服务器端通过握手连接连接成功后才能相互通信。
+```
+
+<a name="de3f7382"></a>
+
+### 8、如何清除浏览器的缓存
+
+```
+答: 当我们请求的地址相同的时候，浏览器为了提高性能，会把相同地址的数据进行缓存。如果服务端的数据发生改变，客户端也不会更新，那就需要清除缓存
+    解决：在url后面加时间戳
+    例如：https://www.baidu.com?time=New Date()
+```
+
+<a name="37529f24"></a>
+
+### 9、token的作用是什么
+
+```
+答: token是服务端生成的“令牌”，来标识不同身份的
+    1. 防止表单重复提交
+    2.判断用户是否登录
+```
+
+<a name="76d7fe06"></a>
+
+### 10、列举echarts常用的配置项，说明含义
+
+```
+答:      图表标题 title
+		图例  legend
+		值域 dataRange
+		提示框 tooltip
+		区域缩放控制器 dataZoom
+		网格 grid
+		类目轴 categoryAxis
+		值型坐标轴默认参数 valueAxis
+		柱形图默认参数 bar
+		折线图默认参数 line
+		散点图默认参数 scatter
+		饼图默认参数 pie
+		默认标志图形类型列表 symbolList
+		可计算特性配置, 孤岛, 提示颜色 calculable
+```
+
+<a name="61ef82c4"></a>
+
+### 11、git如何管理一个项目和git如何解决合并冲突
+
+```
+1、git管理项目流程
+答: 1、git init初始化git仓库（新项目才有这一步）
+    2、git clone将远程仓库的项目资料下载下来
+    3、git checkout -b dev (dev 为本地分支名）
+    4、git add .将工作区文件存在暂存区
+    4、git commit -m  ""从暂存区存到仓储区
+    5、git checkout master切到master分支
+    6、git merge dev 合并分支,合并后要将分支删除
+    7、使用git push将其上传到远程仓库
+    8、第二上班，先pull一下，更新最新代码
+    
+2、git解决合并冲突
+答：冲突的原因：代码提交的时候，在当前行有新的代码要加入，就会出现冲突。例如：20行已经有代码了，但是合并的的代码20行也是有代码，这样就会出现冲突。
+	解决办法：如果是双方的代码是不同的业务，那就保留双方双方更改（vscode有提示）。如果是重复的业务逻辑，那就选择采用当前更改（vscode有提示）。
+```
+
+<a name="5e464b44"></a>
+
+### 12、介绍一下你们公司的开发流程（自己理解，形成自己的东西）
+
+```
+答: （这是最基础的流程，自己理解，形成自己的东西）
+    1、项目确定下来后
+    2、先分配确定开发人员,然后产品会召集相关开发人员一起开一个项目分析会
+    3、接着就项目立项了,项目立项会形成一个prd,确定开发周期
+    4、然后就进入开发阶段了,在开发一段时间会进行前后端联调
+    5、功能完成后会先进行冒烟测试,检查是否有阻塞缺陷
+    6、开发全部结束就进入测试阶段
+    7、测试通过就可以上线了,上线之后会有一个回归测试，检查有没有影响以前的功能，保证全流程没有问题
+```
+
+<a name="dcdf44bd"></a>
+
+### 13、在地址栏输入网址，到数据返回的过程是什么？
+
+```javascript
+答:  1. 输入url地址后，首先进行DNS解析，将相应的域名解析为IP地址。
+     2. 根据IP地址去寻找相应的服务器。
+     3. 与服务器进行TCP的三次握手，建立连接。
+     4. 客户端发送请求，找到相应的资源库。
+     5. 客户端拿到数据，进行相应的渲染。
+```
+
+<a name="eb14dcce"></a>
+
+### 14、原生 ajax 请求的步骤
+
+```javascript
+答：1.创建异步对象 var xhr = new XMLHttpRequest()
+    2.设置请求行  xhr.open()
+    3.设置请求头  xhr.setRequestHeader()   get请求没有请求头
+    4.设置请求体  xhr.send      get请求没有请求体,参数为null
+    5.监视异步对象的状态变化   xhr.onreadystatechange(){}
+```
+
+<a name="4e6f969f"></a>
+
+### 15、什么是promise，特点是什么
+
+```javascript
+	首先，它是一个对象，也就是说与其他JavaScript对象的用法，没有什么两样；它使得异步操作具备同步操作的效果，使得程序具备正常的同步运行的流程，回调函数不必再一层层嵌套。
+	简单说，它的思想是，每一个异步任务立刻返回一个Promise对象，由于是立刻返回，所以可以采用同步操作的流程。这个Promises对象有一个then方法，允许指定回调函数，在异步任务完成后调用。
+    
+ 特点：
+    1、Promise对象只有三种状态。
+        异步操作“未完成”（pending）
+        异步操作“已完成”（resolved，又称fulfilled）
+        异步操作“失败”（rejected）
+        异步操作成功，Promise对象传回一个值，状态变为resolved。
+        异步操作失败，Promise对象抛出一个错误，状态变为rejected。
+    2、promise的回调是同步的，then是异步的
+    3、可以链式调用
+```
+
+<a name="e6a50f14"></a>
+
+### 16、promise的方法有哪些，能说明其作用
+
+```javascript
+原型上的方法：
+1、Promise.prototype.then()
+	1）作用是为 Promise 实例添加状态改变时的回调函数。接受两个回调函数作为参数。第一个回调函数是Promise对象的状态变为resolved时调用，第二个回调函数是Promise对象的状态变为rejected时调用。其中，第二个函数是可选的，不一定要提供。
+    2）返回的是另一个Promise对象，后面还可以接着调用then方法。
+2、Promise.prototype.catch()
+	1）用于指定发生错误时的回调函数。
+    2）返回的也是一个 Promise 对象，因此还可以接着调用then方法
+3、Promise.prototype.finally()
+	1）finally方法用于指定不管 Promise 对象最后状态如何，都会执行的回调函数。
+    2）finally方法的回调函数不接受任何参数，这意味着没有办法知道，前面的 Promise 状态到底是fulfilled还是rejected。
+
+自身API:
+1、Promise.resolve()
+	1）不带参数传递 — 返回一个新的状态为resolve的promise对象
+    2）参数是一个 Promise 实例— 返回 当前的promise实例
+2、Promise.reject()
+	1)返回的是一个值
+    2）返回的值会传递到下一个then的resolve方法参数中
+3、Promise.all() 
+	1）并行执行异步操作的能力
+    2）所有异步操作执行完后才执行回调
+4、Promise.race()
+	1）那个结果返回来的快就是，那个结果，不管结果是成功还是失败
+```
+
+<a name="40e69fb2"></a>
+
+### 17、async和await是干什么的
+
+```javascript
+1、async 用于申明一个 function 是异步的，而 await 用于等待一个异步方法执行完成。
+2、await 只能出现在 async 函数中。
+3、async 函数返回的是一个 Promise 对象，后面可以用then方法。
+```
+
+<a name="085cd3df"></a>
+
+### 18、怎么理解三次握手
+
+```javascript
+字段	      含义
+URG	   紧急指针是否有效。为1，表示某一位需要被优先处理
+ACK	   确认号是否有效，一般置为1。
+PSH	   提示接收端应用程序立即从TCP缓冲区把数据读走。
+RST	   对方要求重新建立连接，复位。
+SYN	   请求建立连接，并在其序列号的字段进行序列号的初始值设定。建立连接，设置为1
+FIN    希望断开连接。
+
+1、三次握手
+    第一次握手：建立连接时，客户端发送syn包到服务器，等待服务器确认。
+    第二次握手：服务器收到syn包，必须确认客户的SYN，同时自己也发送一个SYN包（syn=y）到客户端
+    第三次握手：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK，此包发送完毕，客户端和服务器进入（TCP连接成功）状态，完成三次握手
+   （通俗：主机1告诉主机2，我可以向你请求数据吗。主机2告诉主机1，可以请求数据。主机1告诉主机2，那我来请求数据了，请求完成，实现三次握手）
+```
+
+<a name="9574e20e"></a>
+
+### 19、怎么理解四次挥手
+
+```javascript
+1、四次挥手
+    第一次分手：主机1（可以使客户端，也可以是服务器端）向主机2发送一个FIN报文段；此时，主机1进入FIN_WAIT_1状态；这表示主机1没有数据要发送给主机2了。
+    第二次分手：主机2收到了主机1发送的FIN报文段，向主机1回一个ACK报文段，主机1进入FIN_WAIT_2状态；主机2告诉主机1，我“同意”你的关闭请求。
+    第三次分手：主机2向主机1发送FIN报文段，请求关闭连接，同时主机2进入LAST_ACK状态。
+    第四次分手：主机1收到主机2发送的FIN报文段，向主机2发送ACK报文段，然后主机1进入TIME_WAIT状态；主机2收到主机1的ACK报文段以后，就关闭连接；此时，主机1等待2MSL后依然没有收到回复，则证明Server端已正常关闭，那好，主机1也可以关闭连接了。
+    （通俗：主机1告诉主机2，我没有数据要发送了，希望断开连接。主机2接到请求后说，同意断开。主机2告诉主机1可以关闭连接了。主机1接到可以关闭的指令后，关闭连接，四次挥手完成）
+```
+
+<a name="e6eff10f"></a>
+
+### 20、怎么理解事件循环机制
+
+```javascript
+	1、JavaScript 是一门单线程语言.单线程可能会出现阻塞的情况，所js分了同步任务和异步任务。
+    2、同步和异步任务分别进入不同的执行环境，同步的进入主线程，即主执行栈，异步的进入 Event Queue（事件队列） 。主线程内的任务执行完毕为空，会去 Event Queue 读取对应的任务，推入主线程执行。 上述过程的不断重复就是我们说的 Event Loop (事件循环)。
+```
+
 
 
 
