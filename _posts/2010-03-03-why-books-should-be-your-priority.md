@@ -41,19 +41,19 @@ paginate: true
 ● git remote -v<br>
 
 
-# 查看分支<br>
+## 查看分支<br>
 git branch<br>
 
-# 创建新分支<br>
+## 创建新分支<br>
 git branch 分支名<br>
 
-# 切换分支<br>
+## 切换分支<br>
 git checkout 分支名<br>
 
-# 合并分支<br>
+## 合并分支<br>
 git merge 分支名<br>
 
-# 删除分支<br>
+## 删除分支<br>
 git branch -d 分支名<br>
 git branch -D 分支名<br>
 
@@ -84,14 +84,14 @@ git branch -D 分支名<br>
 
 
 
-# 安装命令<br>
+## 安装命令<br>
 npm install 包名<br>
 npm i 包名                 ---  安装命令的简写<br>
 npm i 包名 包名 包名        --- 一次性安装多个包<br>
 npm i 包名@版本号           --- 安装指定的版本<br>
 npm i 包名 -D              --- 安装开发依赖（开发阶段才能用得上，项目做完就用不上了）<br>
 
-# 卸载命令<br>
+## 卸载命令<br>
 npm uninstall 包名<br>
 npm un 包名                --- 卸载命令的简写<br>
 npm un 包名 包名 包名       --- 一次性卸载多个包<br>
@@ -116,10 +116,10 @@ npm run serve<br>
 npm run build 打包结果<br>
 
 
-# 使用less，需要安装下面的包<br>
+## 使用less，需要安装下面的包<br>
 npm i less-loader less -D           #（@vue/cli 5.0.1，直接安装）<br>
 
-# 使用scss，需要安装下面的包<br>
+## 使用scss，需要安装下面的包<br>
 npm i sass sass-loader -D <br>
 
 
