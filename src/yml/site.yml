@@ -5,9 +5,6 @@ description: Jekflix is a template for Jekyll inspired by Netflix and made by
 tags:
   - blog
   - template
-  - jekyll
-  - theme
-  - netlify
 show_hero: true
 menu:
   - title: Home
