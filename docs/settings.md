@@ -18,7 +18,7 @@ Example:
 
 ```yaml
 # site.yml
-name: Jekflix
+name: 李梓涵
 ```
 
 #### `title`
@@ -31,7 +31,7 @@ Example:
 
 ```yaml
 # site.yml
-title: Jekflix | A blog theme for Jekyll
+title: 
 ```
 
 #### `description`
@@ -79,7 +79,7 @@ Example:
 
 ```yaml
 # site.yml
-email: youremail@xyz.com
+email: lizihan997@163.com
 ```
 
 #### `formspree_form_id `
