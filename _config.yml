@@ -22,7 +22,7 @@ email: lizihan997@63.com
 # See: https://zihanhan.work/
 disqus_username: disqus_username
 # Contact Form Setting
-# See: https://formspree.io/
+# See: https://zihanhan.work/
 formspree_form_id: formspree_form_id
 
 
@@ -58,7 +58,7 @@ highlighter: rouge
 permalink: /:title/
 collections:
   authors:
-    output: true
+    output: false
 paginate_path: "/page/:num/"
 show_get_theme_btn: true
 use_logo: false
