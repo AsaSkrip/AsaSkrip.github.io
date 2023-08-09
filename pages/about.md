@@ -19,3 +19,4 @@ permalink: /about/
 
 # 微信
 ## LZH01030405
+<img class="img-rounded" src="/src/img/wx.png" alt="Thiago Rossener" width="200">
