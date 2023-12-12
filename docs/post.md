@@ -52,10 +52,10 @@ The post publishing date. Format: `YYYY-MM-DD hh:mm:ss`
 Example:
 
 ```yaml
-# _posts/2019-08-22-example.md
+# _posts/2023-08-22-example.md
 ---
 ...
-date: 2019-05-16 23:48:05
+date: 2023-05-16 23:48:05
 ...
 ---
 ```
