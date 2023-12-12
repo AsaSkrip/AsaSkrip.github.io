@@ -7,8 +7,6 @@ description: Some description.
 permalink: /about/
 ---
 
-<img src="https://my-bucket-1305649174.cos.ap-chengdu.myqcloud.com/image/db1dc189992bc83decc8926d0f59d8d.png" alt="Thiago Rossener" width="200">
-<img src="https://my-bucket-1305649174.cos.ap-chengdu.myqcloud.com/image/db1dc189992bc83decc8926d0f59d8d.png" width="200">
 
 # 介绍
 
