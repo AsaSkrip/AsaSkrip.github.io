@@ -10,7 +10,7 @@ category: 'JS基础面试题'
 tags:
   - languages
   - tips
-author: mranderson
+author: 李梓涵
 ---
 
 <a name="CQin7"></a>
