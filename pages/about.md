@@ -1,4 +1,4 @@
----
+<img width="1212" height="1626" alt="image" src="https://github.com/user-attachments/assets/daf9a99f-6279-4ed3-a022-d7efc4fbba90" />---
 layout: page
 menu: false
 date: '2025-10-02 01:53:59'
@@ -9,7 +9,7 @@ permalink: /about/
 
 # 微信
 ## ZHY03K7
-<img src="https://my-bucket-1305649174.cos.ap-chengdu.myqcloud.com/src/img/a7dd9976a92e08b4a795de264adf4db2.png" alt="Thiago Rossener" width="200">
+<img src="[https://my-bucket-1305649174.cos.ap-chengdu.myqcloud.com/src/img/a7dd9976a92e08b4a795de264adf4db2.png](https://github.com/AsaSkrip/AsaSkrip.github.io/blob/master/src/img/wx.png?raw=true)" alt="Thiago Rossener" width="200">
 
 
 
