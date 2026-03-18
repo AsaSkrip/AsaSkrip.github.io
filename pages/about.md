@@ -1,4 +1,4 @@
-<img width="1212" height="1626" alt="image" src="https://github.com/user-attachments/assets/daf9a99f-6279-4ed3-a022-d7efc4fbba90" />---
+
 layout: page
 menu: false
 date: '2025-10-02 01:53:59'
@@ -10,7 +10,7 @@ permalink: /about/
 # 微信
 ## ZHY03K7
 
-
+<img width="1212" height="1626" alt="image" src="https://github.com/user-attachments/assets/daf9a99f-6279-4ed3-a022-d7efc4fbba90" />
 
 
 
