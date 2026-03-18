@@ -9,7 +9,7 @@ permalink: /about/
 
 # 微信
 ## ZHY03K7
-<img src="https://my-bucket-1305649174.cos.ap-chengdu.myqcloud.com/src/img/a7dd9976a92e08b4a795de264adf4db2.png](https://github.com/AsaSkrip/AsaSkrip.github.io/blob/master/src/img/wx.png" alt="Thiago Rossener" width="200">
+
 
 
 
