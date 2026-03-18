@@ -7,6 +7,12 @@ description: Some description.
 permalink: /about/
 ---
 
+# 微信
+## LZH01030405
+<img src="https://my-bucket-1305649174.cos.ap-chengdu.myqcloud.com/image/db1dc189992bc83decc8926d0f59d8d.png" alt="Thiago Rossener" width="200">
+
+
+
 
 # 介绍
 
@@ -23,6 +29,3 @@ permalink: /about/
 不必再为毕设的程序开发头疼，不必再为论文的框架搭建、查重修改焦虑，把计算机毕设、论文交给我李梓涵，交给我们专业的团队，你只管安心准备答辩、放松心态，剩下的所有繁琐工作，我们全部帮你搞定，助力你顺利毕业，开启人生新征程！
 
 
-# 微信
-## LZH01030405
-<img src="https://my-bucket-1305649174.cos.ap-chengdu.myqcloud.com/image/db1dc189992bc83decc8926d0f59d8d.png" alt="Thiago Rossener" width="200">
